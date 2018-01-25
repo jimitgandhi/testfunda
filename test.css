@@ -1,0 +1,317 @@
+.hide {
+            display: none;
+        }
+        #navtop {
+            display:grid;
+            grid-template-columns:5fr 3fr 3fr 3fr 7fr 3.5fr 2fr 2.5fr;
+            grid-row-gap: 0;
+            background-color: #262c29;
+        }
+        .grid {
+            display:grid;
+            grid-template-columns: 1fr 6fr 4fr 0.5fr;
+            height: auto;
+        }
+        .greenul li {
+            padding: 20px;
+            color: white;
+        }
+
+        #stats li {
+            display: inline-block;
+            width:24%;
+            border-right-color: white;
+            border-right:solid;
+        }
+        #navside {
+            position: fixed;
+            height: 100vh;
+            background-color: #00c785;
+        }
+        .blackul {
+            background-color: #262c29;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .blackul3 {
+            border: 1px solid #1f1f1f;
+            background-color: #262c29;
+            color:white;
+            text-align:center;
+            padding:10px;
+        }
+        .blackul3 a {
+            text-decoration:none;
+        }
+        .blackul3 a:hover {
+            text-decoration: underline;
+        }
+        .greenul{
+            background-color:#00c785;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        #stats, #navtop li {
+            display: block;
+            min-width: 60px;
+            padding: 0px;
+            text-align: center;
+            color: white;
+        }
+        li div {
+            padding: 16px;
+        }
+        .dropbtn {
+            color: white;
+            padding: 5px;
+            padding-right: 20px;
+            border-right:1px solid white;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        .dropdown-content {
+            padding: 0;
+            position: absolute;
+            background-color: #f9f9f9;
+        }
+        .dropdown-content a {
+            color: black;
+            border-bottom: 1px solid black;
+            padding: 5px 30px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content .dropdown:hover {
+            background-color: #f1f1f191
+        }
+        #large {
+            font-size: 50px;
+        }
+        .mySlides {
+            height:100%;
+            width:0px;
+            transition: width 2s;
+            transform: 
+        }
+        .sidenav {
+            height: 100%; /* 100% Full-height */
+            width: 0px; /* 0 width - change this with JavaScript */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Stay on top */
+            top: 0; /* Stay at the top */
+            left: 0;
+            background-color: #078b85; /* Black*/
+            overflow-x: hidden; /* Disable horizontal scroll */
+            padding-top: 60px; /* Place content 60px from the top */
+            transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+            margin-left: 67.862px;
+        }
+        .sidenav a {
+            padding: 32px 8px 32px 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            height: 27.862px;
+            color:white;
+            display: block;
+        }
+        .sidenav ul div a {
+            font-size: 12px;
+            padding: 5px;
+            font-weight: 100;
+        }
+        #navside:hover .sidenav {
+            width:250px;
+        }
+        #announcements {
+            list-style-type: none;
+            margin: 10px;
+            padding: 10px;
+        }
+        #announcements li:before {
+            content: "\0BB \020";
+        }
+        #announcements li {
+            padding-bottom: 6px;
+        }
+        #announcements li a {
+            text-decoration: none;
+        }
+        #announcements li:hover {
+            text-decoration: underline;
+        }
+        .courses {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            border-spacing: 40px 20px;
+        }
+        .popular {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            border-spacing: 40px 20px;
+        }
+        .popular td {
+            border: 2px solid #c7f9c4;
+            padding: 0;
+        }
+        .features {
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+            border-spacing: 20px;
+            color: #575555;
+        }
+        .features tr td div {
+            float: left;
+            height: 100px;
+            padding-right: 20px;
+        }
+        .courses tr td {
+            border: 1px solid #d1d1d1;
+            font-size: 15px;
+        }
+        .coursetopic {
+            font-size:  20px;
+            font-weight: bold; 
+        }
+        .coursedata {
+            color: gray;
+        }
+        .coursecontent {
+            margin:25px 25px 35px 25px;
+            
+            padding:25px 5px 35px 5px;
+        }
+        .viewmore {
+            font-size: 20px;
+            padding: 10px;
+            margin-bottom: 0;
+            opacity: 0;
+        }
+        #course1:hover .viewmore1 {
+            opacity:1;
+            text-decoration: underline;
+            background-color: #ffe7e3;
+        }
+        #course1:hover {
+            text-decoration: underline;
+        }
+        #course2:hover .viewmore2 {
+            opacity:1;
+            text-decoration: underline;
+            background-color: #e8fee7;
+        }
+        #course2:hover {
+            text-decoration: underline;
+        }
+        #course3:hover .viewmore3 {
+            opacity:1;
+            text-decoration: underline;
+            background-color: #ffeeca;
+        }
+        #course3:hover {
+            text-decoration: underline;
+        }
+        #course4:hover .viewmore4 {
+            opacity:1;
+            text-decoration: underline;
+            background-color: #ffeeca;
+        }
+        #course4:hover {
+            text-decoration: underline;
+        }
+        #course5:hover .viewmore5 {
+            opacity:1;
+            text-decoration: underline;
+            background-color: #b5dce1;
+        }
+        #course5:hover {
+            text-decoration: underline;
+        }
+        .startnow {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            background-color: #575555;
+            color: white;
+            font-size: 20px;
+            padding: 10px 20px 10px 20px;
+            font-weight: bold;
+            border-radius: 5px;
+            border-width: 1px;
+        }
+        .signups {
+            margin-left: auto;
+            margin-right: auto;
+            width: 30%;
+            text-align: center;
+            border-spacing: 20px;
+        }
+        .signupnow {
+            background-color: #05a705;
+            color: white;
+            width: 150px;
+            font-size: 20px;
+            padding: 10px 20px 10px 20px;
+            font-weight: bold;
+            border-color: #05a705;
+            border-radius: 5px;
+            border-width: 1px;
+        }
+        .login {
+            margin-top: 10px;
+            background-color: #209c62;
+            color: white;
+            font-size: 15px;
+            padding:    2px 20px 2px 20px;
+            border-radius: 20px;
+            border-width: 1px;
+            border-color: #209C62;
+        }
+        .signup {
+            margin-top: 10px;
+            background-color: #575555;
+            color: white;
+            font-size: 15px;
+            padding:    2px 20px 2px 20px;
+            border-radius: 20px;
+            border-width: 1px;
+            border-color: #575555;
+        }
+        #topcontact {
+            color: white;
+            text-decoration: none;
+        }
+        .popularcontent {
+            font-size: 20px;
+            color:#645f5f;
+            border-bottom: 1px solid gray;
+        }
+        .popularhead {
+            padding:5px 50px 5px 50px;
+            margin: 0;
+            font-weight: bold;
+        }
+        .popularcontent2 {
+            font-size: 12px;
+            padding:60px 15px 5px 15px;
+            font-weight:bold;
+            color:#645f5f;
+        }
+        .link {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .links {
+            list-style-type: none;
+        }
+        .links li:before {
+            content: "\0BB \020";
+        }
+        .links li {
+            font-size: 12px;
+        }
