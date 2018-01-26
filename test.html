@@ -6,10 +6,45 @@
   <script src="https://use.fontawesome.com/4fc0c02416.js"></script>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel = "stylesheet" type = "text/css" href = "test.css" />
-    <style >
-       
-    </style>
+<link rel="shortcut icon" href="icon.png" />
     <body style="margin:0">
+        <div id="chatbox" class="chatbox">
+            <table style="width:200px;">
+                <tr>
+                    <td id="chathead">
+                        Offiline
+                        <span id="cc" style="cursor:pointer"><i title="Expand/Close" id="chatbut" class="fa fa-angle-up fa-2x" aria-hidden="true" style="float:right"></i></span>
+                        </td>
+                </tr>
+                <div>
+                    <tr>
+                        <td style="text-align:center;padding-left: 20px;padding-right:20px">
+                        Please fill out the form below and we'll get back to you as soon as possible.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" placeholder="Name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" placeholder="Email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" placeholder="Contact Number">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="submit">Submit</button>
+                        </td>
+                    </tr>
+                </div>
+            </table>
+        </div> 
            <div id="navside">
                <div id="sidepop" class="sidenav">
                     <ul>
@@ -38,16 +73,16 @@
                             <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
                         </li>
                         <li>
-                            <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+                            <i id="greenb2" class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
                         </li>
                         <li>
-                            <i class="fa fa-book fa-2x" aria-hidden="true"></i>
+                            <i id="greenb3" class="fa fa-book fa-2x" aria-hidden="true"></i>
                         </li>
                         <li>
-                            <i class="fa fa-file-text fa-2x" aria-hidden="true"></i>
+                            <i id="greenb4" class="fa fa-file-text fa-2x" aria-hidden="true"></i>
                         </li>
                         <li>
-                                <i class="fa fa-info-circle fa-2x" aria-hidden="true"></i>
+                                <i id="greenb5" class="fa fa-info-circle fa-2x" aria-hidden="true"></i>
                             </li>
                     </ul>
         
@@ -99,10 +134,13 @@
             </ul>
             <div class="grid" >
                 <div style="grid-column:1;background-color:#a2b1f3"></div>
-            <div style="max-width:1000px; grid-column:2">
-              <img class="mySlides" src="car1.png" style="width:100%">
-              <img class="mySlides" src="car2.png" style="width:100%">
-              <img class="mySlides" src="car3.png" style="width:100%">
+            <div style="max-width:1000px; grid-column:2" id="container">
+                <div class="carousel">  
+                    <img src="car1.png" class="slider-image"/>
+                    <img src="car2.png" class="slider-image"  />
+                    <img src="car3.png" class="slider-image" />
+                    <img src="car4.png" class="slider-image" />
+                </div>
             </div>
             <div style="grid-column:3">
                 <p>
@@ -326,6 +364,23 @@
                     MH CET Test Series - Now on sale | <a href=# style="color:blue">Buy now </a> 
             </div>
             <br>
+            <h1 style="font-weight:bolder;text-align:center">Rankers and Success Stories</h1>
+            <div id="container2">
+                <div class="carousel2">  
+                        <div class="slider-image car2">
+                            <img src="JBIMS.png" class="car2img"><div id="car2text">I have been accessing Testfunda since 2009. I started by subscribing to the daily questions, wordlists and was fascinated by the weekly puzzle. I bought mocks for CAT, XAT and SSC. Being a working professional since 5 years, I studied whenever I could and mostly on weekends since I couldn’t have a fixed schedule.</div>
+                        </div>
+                        <div class="slider-image car2">
+                            <img src="Himanshu_Joshi.png" class="car2img"><div id="car2text">I have been accessing Testfunda since 2009. I started by subscribing to the daily questions, wordlists and was fascinated by the weekly puzzle. I bought mocks for CAT, XAT and SSC. Being a working professional since 5 years, I studied whenever I could and mostly on weekends since I couldn’t have a fixed schedule.</div>
+                        </div>
+                        <div class="slider-image car2">
+                            <img src="JBIMS.png" class="car2img"><div id="car2text">I have been accessing Testfunda since 2009. I started by subscribing to the daily questions, wordlists and was fascinated by the weekly puzzle. I bought mocks for CAT, XAT and SSC. Being a working professional since 5 years, I studied whenever I could and mostly on weekends since I couldn’t have a fixed schedule.</div>
+                        </div>
+                        <div class="slider-image car2">
+                            <img src="Himanshu_Joshi.png" class="car2img"><div id="car2text">I have been accessing Testfunda since 2009. I started by subscribing to the daily questions, wordlists and was fascinated by the weekly puzzle. I bought mocks for CAT, XAT and SSC. Being a working professional since 5 years, I studied whenever I could and mostly on weekends since I couldn’t have a fixed schedule.</div>
+                        </div>
+                    </div>
+                </div>
             <div style="background-color:#cff8fe">
                 <table class="signups">
                     <tr>
@@ -434,20 +489,7 @@
                 <img src="company-products.png">
             </div>
             <script>
-                    
-                    var myIndex = 0;
-                    carousel();
-                    function carousel() {
-                        var i;
-                        var x = document.getElementsByClassName("mySlides");
-                        for (i = 0; i < x.length; i++) {
-                           x[i].style.display = "none";  
-                        }
-                        myIndex++;
-                        if (myIndex > x.length) {myIndex = 1}    
-                        x[myIndex-1].style.display = "block";  
-                        setTimeout(carousel, 2000); // Change image every 2 seconds
-                    }
+                           var $ex=0;
                            $(function() {
                             $(".dropdown1").on("click",function(e) {
                                 e.preventDefault();
@@ -472,24 +514,65 @@
                                 $(".clicks4").toggleClass("hide");
                                 $(".clicks5").addClass("hide");
                                 $(".clicks6").addClass("hide");
+                                $("#greenb3").toggleClass("gplus");
+                                $("#greenb4").removeClass("gplus");
+                                $("#greenb5").removeClass("gplus");
+                                $("#greenb6").removeClass("gplus");
                             });
                             $(".dropdown5").on("click",function(e) {
                                 e.preventDefault();
                                 $(".clicks5").toggleClass("hide");
                                 $(".clicks4").addClass("hide");
                                 $(".clicks6").addClass("hide");
+                                $("#greenb4").toggleClass("gplus");
+                                $("#greenb3").removeClass("gplus");
+                                $("#greenb5").removeClass("gplus");
+                                $("#greenb6").removeClass("gplus");
                             });
                             $(".dropdown6").on("click",function(e) {
                                 e.preventDefault();
                                 $(".clicks6").toggleClass("hide");
                                 $(".clicks5").addClass("hide");
                                 $(".clicks4").addClass("hide");
+                                $("#greenb5").toggleClass("gplus");
+                                $("#greenb4").removeClass("gplus");
+                                $("#greenb3").removeClass("gplus");
+                                $("#greenb6").removeClass("gplus");
                             });
                             $(".dropdown7").on("click",function(e) {
                                 e.preventDefault();
                                 $(".clicks4").addClass("hide");
                                 $(".clicks5").addClass("hide");
                                 $(".clicks6").addClass("hide");
+                                $("#greenb6").toggleClass("gplus");
+                                $("#greenb4").removeClass("gplus");
+                                $("#greenb5").removeClass("gplus");
+                                $("#greenb3").removeClass("gplus");
+                            });
+                            $("#navside").mouseleave(function(e) {
+                                e.preventDefault();
+                                $(".clicks4").addClass("hide");
+                                $(".clicks5").addClass("hide");
+                                $(".clicks6").addClass("hide");
+                                $("#greenb6").removeClass("gplus");
+                                $("#greenb4").removeClass("gplus");
+                                $("#greenb5").removeClass("gplus");
+                                $("#greenb3").removeClass("gplus");
+                            });
+                            $("#cc").on("click",function(e) {
+                                e.preventDefault();
+                                if($ex==0) {
+                                    $("#chatbox").css("height","275px");
+                                    $("#chatbut").removeClass("fa-angle-up");
+                                    $("#chatbut").addClass("fa-times");
+                                    $ex=1;
+                                }
+                                else if($ex==1) {
+                                    $('#chatbox').animate({height:'40px'}, 500);
+                                    $("#chatbut").removeClass("fa-times");
+                                    $("#chatbut").addClass("fa-angle-up");
+                                    $ex=0;
+                                }
                             });
                         });
                        

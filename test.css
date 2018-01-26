@@ -3,7 +3,7 @@
         }
         #navtop {
             display:grid;
-            grid-template-columns:5fr 3fr 3fr 3fr 7fr 3.5fr 2fr 2.5fr;
+            grid-template-columns:5fr 3.2fr 3.2fr 3.2fr 6fr 4fr 2fr 2.5fr;
             grid-row-gap: 0;
             background-color: #262c29;
         }
@@ -89,11 +89,32 @@
         #large {
             font-size: 50px;
         }
-        .mySlides {
-            height:100%;
-            width:0px;
-            transition: width 2s;
-            transform: 
+        #container {
+            width: 994px;
+            overflow: hidden;
+            z-index: -1;
+        }
+        .carousel {
+            position: relative;
+            width: 3976px;
+            animation-name: slideranimation;
+            animation-duration: 12s;
+            animation-iteration-count: infinite;
+            z-index:-1;
+        }
+        .slider-image {
+            float: left;
+        }
+        @keyframes slideranimation {
+            0% {left:0px;}
+            20% {left: 0px;}
+            25% {left: -994px;}
+            45% {left: -994px;}
+            50% {left: -1988px;}
+            70% {left: -1988px;}
+            75% {left: -2982px;}
+            90% {left:-2982px;}
+            100% {left:0px;}
         }
         .sidenav {
             height: 100%; /* 100% Full-height */
@@ -157,6 +178,7 @@
         .popular td {
             border: 2px solid #c7f9c4;
             padding: 0;
+            cursor:pointer;
         }
         .features {
             margin-left: auto;
@@ -173,6 +195,7 @@
         .courses tr td {
             border: 1px solid #d1d1d1;
             font-size: 15px;
+            cursor:pointer;
         }
         .coursetopic {
             font-size:  20px;
@@ -183,7 +206,6 @@
         }
         .coursecontent {
             margin:25px 25px 35px 25px;
-            
             padding:25px 5px 35px 5px;
         }
         .viewmore {
@@ -243,6 +265,7 @@
             font-weight: bold;
             border-radius: 5px;
             border-width: 1px;
+            cursor:pointer;
         }
         .signups {
             margin-left: auto;
@@ -261,6 +284,7 @@
             border-color: #05a705;
             border-radius: 5px;
             border-width: 1px;
+            cursor:pointer;
         }
         .login {
             margin-top: 10px;
@@ -271,6 +295,7 @@
             border-radius: 20px;
             border-width: 1px;
             border-color: #209C62;
+            cursor:pointer;
         }
         .signup {
             margin-top: 10px;
@@ -281,6 +306,7 @@
             border-radius: 20px;
             border-width: 1px;
             border-color: #575555;
+            cursor:pointer;
         }
         #topcontact {
             color: white;
@@ -308,6 +334,7 @@
         }
         .links {
             list-style-type: none;
+            cursor:pointer;
         }
         .links li:before {
             content: "\0BB \020";
@@ -315,3 +342,81 @@
         .links li {
             font-size: 12px;
         }
+        #container2 {
+            width: 80vw;
+            overflow: hidden;
+            margin-left: 15vw;
+            margin-right: 5vw;
+        }
+        .carousel2 {
+            position: relative;
+            width: 3200vw;
+            animation-name: slideranimation2;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes slideranimation2 {
+            0% {left:0px;}
+            20% {left: 0px;}
+            25% {left: -80vw;}
+            45% {left: -80vw;}
+            50% {left: -160vw;}
+            70% {left: -160vw;}
+            75% {left: -240vw;}
+            90% {left:-240vw;}
+            100% {left:0px;}
+        }
+        .car2 {
+            width: 80vw;
+            color:gray;
+            text-justify: newspaper;
+            font-size: 18px;
+            font-style: italic;
+            margin-top: 0px;
+        }
+        .car2img {
+            float:left;
+            margin-bottom:20px;
+            padding: 10px 40px 10px 10px;
+        }
+        #car2text {
+            margin-top:45px;
+            width: 70vw;
+        }
+        .chatbox {
+            position: fixed;
+            bottom: 0;
+            right: 20px;
+            font-size: 15px;
+            height: 40px;
+            background-color: white;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            transition: 0.5s;
+        }
+        .chatbox table tr td{
+            padding-left: 4px;
+            padding-right: 4px;
+        }
+        #chathead {
+            height:20px;
+            background-color:#076107;
+            padding: 5px 15px 5px 15px;
+            color: white;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .chatbox tr td button {
+            width:200px;
+            color: white;
+            background-color:#076107;
+            border: none;
+            font-size: 20px;
+        }
+        .hplus {
+            height: 275px;
+        }
+        .gplus {
+            margin-top:90px;
+        }
+        
