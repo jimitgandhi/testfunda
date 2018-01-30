@@ -2,96 +2,103 @@
     <title>
         Best CAT classes
     </title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://use.fontawesome.com/4fc0c02416.js"></script>
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel = "stylesheet" type = "text/css" href = "test.css" />
-<link rel="shortcut icon" href="icon.png" />
-    <body style="margin:0">
-        <div id="chatbox" class="chatbox">
-            <table style="width:200px;">
-                <tr>
-                    <td id="chathead">
-                        Offiline
-                        <span id="cc" style="cursor:pointer"><i title="Expand/Close" id="chatbut" class="fa fa-angle-up fa-2x" aria-hidden="true" style="float:right"></i></span>
-                        </td>
-                </tr>
-                <div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/4fc0c02416.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel = "stylesheet" type = "text/css" href = "test.css" />
+    <link rel="shortcut icon" href="icon.png" />
+    <body>
+        <!-- Chatbox -->
+        <section>
+            <div id="chatbox" class="chatbox">
+                <table style="width:200px;">
                     <tr>
-                        <td style="text-align:center;padding-left: 20px;padding-right:20px">
-                        Please fill out the form below and we'll get back to you as soon as possible.
+                        <td id="chathead">
+                            Offiline<span id="cc" style="cursor:pointer"><i title="Expand/Close" id="chatbut" class="fa fa-angle-up fa-2x" aria-hidden="true" style="float:right"></i></span>
                         </td>
                     </tr>
-                    <tr>
-                        <td>
-                            <input type="text" placeholder="Name">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="text" placeholder="Email">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="text" placeholder="Contact Number">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <button type="submit">Submit</button>
-                        </td>
-                    </tr>
-                </div>
-            </table>
-        </div> 
-           <div id="navside">
-               <div id="sidepop" class="sidenav">
+                    <div>
+                        <tr>
+                            <td style="text-align:center;padding-left: 20px;padding-right:20px">
+                            Please fill out the form below and we'll get back to you as soon as possible.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" placeholder="Name">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" placeholder="Email">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" placeholder="Contact Number">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button type="submit">Submit</button>
+                            </td>
+                        </tr>
+                    </div>
+                </table>
+            </div>
+        </section>
+        <!-- Side Navigation Bar -->
+        <section>
+            <div id="navside">
+            <div id="sidepop" class="sidenav">
                     <ul>
                         <a href="#" class="dropdown4">PURCHASE <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                         <div class="clicks4 hide">
-                                <a href="#">MBA 2018</a>
-                                <a href="#">UPSC 2020</a>
-                                <a href="#">CAT 2019</a>
+                            <a href="#">MBA 2018</a>
+                            <a href="#">UPSC 2020</a>
+                            <a href="#">CAT 2019</a>
                         </div>
                         <a href="#" class="dropdown5">COURSEWARE <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                         <div class="clicks5 hide">
-                                <a href="#">MBA 2018</a>
-                                <a href="#">UPSC 2020</a>
-                                <a href="#">CAT 2019</a>
+                            <a href="#">MBA 2018</a>
+                            <a href="#">UPSC 2020</a>
+                            <a href="#">CAT 2019</a>
                         </div>
                         <a href="#" class="dropdown6">RESOURCES <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                         <div class="clicks6 hide">
-                                <a href="#">MBA 2018</a>
-                                <a href="#">UPSC 2020</a>
-                                <a href="#">CAT 2019</a>
+                            <a href="#">MBA 2018</a>
+                            <a href="#">UPSC 2020</a>
+                            <a href="#">CAT 2019</a>
                         </div>
                         <a href="#" class="dropdown7">BLOG</a>
-               </div>
-                    <ul class="greenul">
-                        <li>
-                            <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
-                        </li>
-                        <li>
-                            <i id="greenb2" class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
-                        </li>
-                        <li>
-                            <i id="greenb3" class="fa fa-book fa-2x" aria-hidden="true"></i>
-                        </li>
-                        <li>
-                            <i id="greenb4" class="fa fa-file-text fa-2x" aria-hidden="true"></i>
-                        </li>
-                        <li>
-                                <i id="greenb5" class="fa fa-info-circle fa-2x" aria-hidden="true"></i>
-                            </li>
                     </ul>
-        
-                </div> 
+                </div>
+                <ul class="greenul">
+                    <li>
+                        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+                    </li>
+                    <li>
+                        <i id="greenb2" class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+                    </li>
+                    <li>
+                        <i id="greenb3" class="fa fa-book fa-2x" aria-hidden="true"></i>
+                    </li>
+                    <li>
+                        <i id="greenb4" class="fa fa-file-text fa-2x" aria-hidden="true"></i>
+                    </li>
+                    <li>
+                        <i id="greenb5" class="fa fa-info-circle fa-2x" aria-hidden="true"></i>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Top Navigation Bar -->
+        <section>
             <ul id="navtop" class="blackul">
-                <li style="grid-column:1">
-                    <a href="#"><img src="logo.png" id="logo" style="margin-left:80px"></a>
+                <li>
+                    <a href="#"><img src="logo.png" id="logo"></a>
                 </li>
-                <li  style="grid-column:2">
+                <li>
                     <div class="dropdown1">              
                         <a href="#" class="dropbtn">Pricing   <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                         <div class="dropdown-content clicks1 hide">
@@ -101,7 +108,7 @@
                         </div>
                     </div>
                 </li>
-                <li  style="grid-column:3">
+                <li>
                     <div class="dropdown2">              
                         <a href="#" class="dropbtn">Free Tests   <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                         <div class="dropdown-content clicks2 hide">
@@ -111,7 +118,7 @@
                         </div>
                     </div>
                 </li>
-                <li style="grid-column:4">
+                <li>
                     <div class="dropdown3">              
                         <a href="#" class="dropbtn">Resources   <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                         <div class="dropdown-content clicks3 hide">
@@ -120,77 +127,85 @@
                             <a href="#">Mobile App</a>
                         </div>
                     </div>
-                </li>
-                <li style="grid-column:5"></li>
-                <li style="grid-column:6">
-                        <div id="topcontact"><i class="fa fa-phone" aria-hidden="true"></i>  +919930005544</div>
-                </li>    
-                <li style="grid-column:7">
-                    <button class="login">LOGIN</button>
-                </li>    
-                <li style="grid-column:8">
+                </li>        
+                <li class="right">
                     <button class="signup">SIGN UP</button>
                 </li>
+                <li class="right">
+                    <button class="login">LOGIN</button>
+                </li>
+                <li class="right">
+                    <div id="topcontact"><i class="fa fa-phone" aria-hidden="true"></i>
+                         +919930005544
+                    </div>
+                </li>
             </ul>
+        </section>
+        <!-- Ad Carousel and Announcements -->
+        <section>
             <div class="grid" >
-                <div style="grid-column:1;background-color:#a2b1f3"></div>
-            <div style="max-width:1000px; grid-column:2" id="container">
-                <div class="carousel">  
-                    <img src="car1.png" class="slider-image"/>
-                    <img src="car2.png" class="slider-image"  />
-                    <img src="car3.png" class="slider-image" />
-                    <img src="car4.png" class="slider-image" />
+                <div class="leftsp"></div>
+                <div id="container">
+                    <div class="carousel">  
+                        <img src="car1.png" class="slider-image"/>
+                        <img src="car2.png" class="slider-image"  />
+                        <img src="car3.png" class="slider-image" />
+                        <img src="car4.png" class="slider-image" />
+                    </div>
                 </div>
-            </div>
-            <div style="grid-column:3">
-                <p>
-                        <h2 style="text-align:center;font-weight:bold">Announcements</h2>
-                        <ul id="announcements" style="padding:0px">
-                        <li>
-                            <a href="#" style="color:red">Buy MH-CET Test series @ Flat 30% OFF</a>
-                        </li>
-                        <li>
-                            <a href="#" style="color:blue">SPJIMR's GMP | Application deadline 28th Feb '18 </a>
-                        </li>
-                        <li>
-                            <a href="#" style="color:red">SOIL PGPM | Scholarship Deadline – 04th Feb 2018</a>
-                        </li>
-                        <li>
-                            <a href="#" style="color:blue">FREE mini MAT mock by ITM | Click Here!</a>
-                        </li>
-                        <li>
-                            <a href="#">MHCET 2018 notification out</a>
-                        </li>
-                        <li>
-                            <a href="#"> WeSchool New Selection Process | PGDM 2018-20</a> 
-                        </li>
-                        <li>
-                            <a href="#">Participate in Pehchan Kaun Contest</a>
-                        </li>
+                <div class="announce">
+                    <p>
+                        <h2 class="heads">Announcements</h2>
+                        <ul id="announcements">
+                            <li>
+                                <a href="#" class="red">Buy MH-CET Test series @ Flat 30% OFF</a>
+                            </li>
+                            <li>
+                                <a href="#" class="blue">SPJIMR's GMP | Application deadline 28th Feb '18 </a>
+                            </li>
+                            <li>
+                                <a href="#" class="red">SOIL PGPM | Scholarship Deadline – 04th Feb 2018</a>
+                            </li>
+                            <li>
+                                <a href="#" class="blue">FREE mini MAT mock by ITM | Click Here!</a>
+                            </li>
+                            <li>
+                                <a href="#">MHCET 2018 notification out</a>
+                            </li>
+                            <li>
+                                <a href="#"> WeSchool New Selection Process | PGDM 2018-20</a> 
+                            </li>
+                            <li>
+                                <a href="#">Participate in Pehchan Kaun Contest</a>
+                            </li>
                         </ul>
-                </p>
+                    </p>
+                </div>
+                <div class="rightsp"></div>
             </div>
-            <div style="grid-column:4;background-color:#a2b1f3">
-
-            </div>
-        </div>
-            <ul id="stats" class="blackul" style="padding:20px">
-                <li>
-                    <span class="rightline"><span id="large">7,95,000<br></span>HAPPY STUDENTS</span>
+        </section>
+        <!--Statistics Bar -->
+        <section>
+            <ul id="stats" class="blackul">
+                <li class="borderr">
+                    <span id="large">7,95,000<br></span>HAPPY STUDENTS
                 </li>
-                <li>
-                    <span><span id="large">9,34,91,000<br></span>QUESTIONS ATTEMPTED</span>
+                <li class="borderr">
+                    <span id="large">9,34,91,000<br></span>QUESTIONS ATTEMPTED
                 </li>
-                <li>
-                    <span><span id="large">10,95,000<br></span>TESTS TAKEN</span>
+                <li class="borderr">
+                    <span id="large">10,95,000<br></span>TESTS TAKEN
                 </li>
-                <li style="border-right:none">
-                    <span style="margin-top:0px; padding:0"><span id="large">2,74,000<br></span>DOUBTS ANSWERED</span>
+                <li id="laststats">
+                    <span id="large">2,74,000<br></span>DOUBTS ANSWERED
                 </li>
             </ul>
+        </section>
+        <!-- Courses -->
+        <section>
             <div>
-                <h1 style="font-weight:bolder;text-align:center">Courses</h1>
-                <table class="courses">
+                <h1 class="heads">Courses</h1>
+                <table class="courses center">
                     <tr>
                         <td id="course1">
                             <div class="coursecontent">
@@ -203,188 +218,214 @@
                             </div>
                         </td>
                         <td id="course2">
+                            <div class="coursecontent">
+                                <img src="courses-img3.png"><br>
+                                <span class="coursetopic">MBA</span><br>
+                                <span class="coursedata">CAT | XAT | IIFT | NMAT | SNAP</span>
+                            </div>
+                            <div class="viewmore viewmore2">
+                                View More
+                            </div>
+                        </td>
+                        <td id="course3">
+                            <div class="coursecontent">
+                                <img src="courses-img6.png"><br>
+                                <span class="coursetopic">MBA</span><br>
+                                <span class="coursedata">CAT | XAT | IIFT | NMAT | SNAP</span>
+                            </div>
+                            <div class="viewmore viewmore3">
+                                View More
+                            </div>
+                        </td>
+                    </tr>
+                    <table class="courses center">
+                        <tr>
+                            <td id="course4">
                                 <div class="coursecontent">
-                                    <img src="courses-img3.png"><br>
+                                    <img src="courses-img5.png"><br>
                                     <span class="coursetopic">MBA</span><br>
                                     <span class="coursedata">CAT | XAT | IIFT | NMAT | SNAP</span>
                                 </div>
-                                <div class="viewmore viewmore2">
+                                <div class="viewmore viewmore4">
                                     View More
                                 </div>
                             </td>
-                            <td id="course3">
-                                    <div class="coursecontent">
-                                        <img src="courses-img6.png"><br>
-                                        <span class="coursetopic">MBA</span><br>
-                                        <span class="coursedata">CAT | XAT | IIFT | NMAT | SNAP</span>
-                                    </div>
-                                    <div class="viewmore viewmore3">
-                                        View More
-                                    </div>
-                                </td>
-                            </tr>
-                </table>
-                <table class="courses">
-                            <tr>
-                                <td id="course4">
-                                     <div class="coursecontent">
-                                        <img src="courses-img5.png"><br>
-                                        <span class="coursetopic">MBA</span><br>
-                                        <span class="coursedata">CAT | XAT | IIFT | NMAT | SNAP</span>
-                                    </div>
-                                    <div class="viewmore viewmore4">
-                                        View More
-                                    </div>
-                                </td>
-                                <td id="course5">
-                                    <div class="coursecontent">
-                                        <img src="courses-img2.png"><br>
-                                        <span class="coursetopic">MBA</span><br>
-                                        <span class="coursedata">CAT | XAT | IIFT | NMAT | SNAP</span>
-                                    </div>
-                                    <div class="viewmore viewmore5">
-                                        View More
-                                   </div>
-                                </td>
-                    </tr>
+                            <td id="course5">
+                                <div class="coursecontent">
+                                    <img src="courses-img2.png"><br>
+                                    <span class="coursetopic">MBA</span><br>
+                                    <span class="coursedata">CAT | XAT | IIFT | NMAT | SNAP</span>
+                                </div>
+                                <div class="viewmore viewmore5">
+                                    View More
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </table>
             </div>
-            <div style="background-color:#f7f7f7">
+        </section>
+        <!-- Features -->
+        <section>
+            <div class="graysec">
                 <br>            
-                <h1 style="font-weight:bolder;text-align:center">Features</h1>
+                <h1 class="heads">Features</h1>
                 <br>
                 <p style="text-align:center">Complete Package for your MBA, Bank & UPSC exam preparation</p>
-                <table class="features">
+                <table class="features center">
                     <tr>
                         <td>
-                            <div><img src="01.png"></div><span class="coursetopic">Stay Updated</span><br>With exam toppers' insights, expert opinions, focused study plans, guruspeak, important news and notifications and GK.
+                            <div>
+                                <img src="01.png">
+                            </div>
+                            <span class="coursetopic">Stay Updated</span><br>With exam toppers' insights, expert opinions, focused study plans, guruspeak, important news and notifications and GK.
                         </td>
                         <td>
-                            <div><img src="02.png"></div><span class="coursetopic">Participate</span><br>Chats by 100 percentilers, top rankers and exam experts, exam-oriented quizzes and contests.
+                            <div>
+                                <img src="02.png">
+                            </div>
+                            <span class="coursetopic">Participate</span><br>Chats by 100 percentilers, top rankers and exam experts, exam-oriented quizzes and contests.
                         </td>
-                        </tr>
-                        <tr>
+                    </tr>
+                    <tr>
                         <td>
-                            <div><img src="03.png"></div><span class="coursetopic">Study Material</span><br>Best-in-class material covering important concepts. Practice questions based on varying levels of difficulty and flavour.
-                            </td>
-                            <td>
-                            <div><img src="04.png"></div><span class="coursetopic">All India Mocks</span><br>Get closest to an actual exam. A guaranteed score improvement tool to give you that added advantage.
-                            </td>
+                            <div>
+                                <img src="03.png">
+                            </div>
+                            <span class="coursetopic">Study Material</span><br>Best-in-class material covering important concepts. Practice questions based on varying levels of difficulty and flavour.
+                        </td>
+                        <td>
+                            <div>
+                                <img src="04.png">
+                            </div>
+                            <span class="coursetopic">All India Mocks</span><br>Get closest to an actual exam. A guaranteed score improvement tool to give you that added advantage.
+                        </td>
                     </tr>
                 </table>
-                <button class="startnow">START NOW <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+                <button class="startnow center">START NOW <i class="fa fa-angle-right" aria-hidden="true"></i></button>
                 <br>
             </div>
+        </section>
+        <!-- Popular Products -->
+        <section>
             <div>
                 <br>            
-                <h1 style="font-weight:bolder;text-align:center">Popular Products This Week</h1>
-                <table class="popular">
+                <h1 class="heads">Popular Products This Week</h1>
+                <table class="popular center">
                     <tr>
-                        <td>
-                            <div style="font-weight:bold;padding-bottom:60px;color:#076107">
-                                <h2 style="font-weight:bold">MH-CET</h2>Combo
+                        <td class="greenborder">
+                            <div  class="poptop green">
+                                <h2 class="heads">MH-CET</h2>Combo
                             </div>
-                            <div style="background-color:#c7f9c4;padding:10px">
-                            <div style="padding:20px;" class="popularcontent">
-                                Questions<br>
-                                <span class="popularhead"><i class="fa fa-question-circle-o fa-2x" aria-hidden="true"></i> 5000+</span>
-                            </div>
-                            <div style="padding:20px;" class="popularcontent">
-                                    Tests<br>
-                                    <span class="popularhead"><i class="fa fa-pencil fa-2x" aria-hidden="true"></i> 100+</span>
-                                </div>
-                                <div style="padding:20px;" class="popularcontent">
-                                        FLTs<br>
-                                        <span class="popularhead"><i class="fa fa-book fa-2x" aria-hidden="true"></i> 15</span>
-                                    </div>
-                                <div style="font-size:22px" class="popularcontent2">
-                                        Rs. 2500<br>
-                                    </div>
-                                </div>
-                                <div style="background-color:#8dc78a;padding:10px 20px 10px 20px;color:black" class="popularcontent2">
-                                        Free Test|Buy Now<br>
-                                    </div>
-                                
-                        </td>
-                        <td style="border-color:#ffeeca">
-                                <div style="font-weight:bold;padding-bottom:60px;color:#076107">
-                                    <h2 style="font-weight:bold">MH-CET</h2>Combo
-                                </div>
-                            <div style="background-color:#ffeeca;padding:10px">
-                                <div style="padding:20px;" class="popularcontent">
+                            <div class="popbody greenback">
+                                <div class="popularcontent">
                                     Questions<br>
                                     <span class="popularhead"><i class="fa fa-question-circle-o fa-2x" aria-hidden="true"></i> 5000+</span>
                                 </div>
-                                <div style="padding:20px;" class="popularcontent">
-                                        Tests<br>
-                                        <span class="popularhead"><i class="fa fa-pencil fa-2x" aria-hidden="true"></i> 100+</span>
-                                    </div>
-                                    <div style="padding:20px;" class="popularcontent">
-                                            FLTs<br>
-                                            <span class="popularhead"><i class="fa fa-book fa-2x" aria-hidden="true"></i> 15</span>
-                                        </div>
-                                    <div style="font-size:22px" class="popularcontent2">
-                                            Rs. 2500<br>
-                                        </div>
-                                        </div>
-                                    <div style="background-color:#ffd988;padding:10px 20px 10px 20px;color:black" class="popularcontent2">
-                                            Free Test|Buy Now<br>
-                                        </div>
-                            </td>
-                            <td style="border-color:#cff8fe">
-                                    <div style="font-weight:bold;padding-bottom:60px;color:#076107">
-                                        <h2 style="font-weight:bold">MH-CET</h2>Combo
-                                    </div>
-                            <div style="background-color:#cff8fe;padding:10px">
-                                    <div style="padding:20px;" class="popularcontent">
-                                        Questions<br>
-                                        <span class="popularhead"><i class="fa fa-question-circle-o fa-2x" aria-hidden="true"></i> 5000+</span>
-                                    </div>
-                                    <div style="padding:20px;" class="popularcontent">
-                                            Tests<br>
-                                            <span class="popularhead"><i class="fa fa-pencil fa-2x" aria-hidden="true"></i> 100+</span>
-                                        </div>
-                                        <div style="padding:20px;" class="popularcontent">
-                                                FLTs<br>
-                                                <span class="popularhead"><i class="fa fa-book fa-2x" aria-hidden="true"></i> 15</span>
-                                            </div>
-                                        <div style="font-size:22px" class="popularcontent2">
-                                                Rs. 2500<br>
-                                            </div>
-                                            </div>
-                                        <div style="background-color:#97f1ff;padding:10px 20px 10px 20px;color:black" class="popularcontent2">
-                                                Free Test|Buy Now<br>
-                                            </div>
-                                </td>
+                                <div class="popularcontent">
+                                    Tests<br>
+                                    <span class="popularhead"><i class="fa fa-pencil fa-2x" aria-hidden="true"></i> 100+</span>
+                                </div>
+                                <div class="popularcontent">
+                                    FLTs<br>
+                                    <span class="popularhead"><i class="fa fa-book fa-2x" aria-hidden="true"></i> 15</span>
+                                </div>
+                                <div class="popularcontent2">
+                                    Rs. 2500<br>
+                                </div>
+                            </div>
+                            <div class="buy popularcontent2 darkgreenback">
+                                Free Test|Buy Now<br>
+                            </div>                    
+                        </td>
+                        <td class="pinkborder">
+                            <div class="poptop pink">
+                                <h2 class="heads">MH-CET</h2>Combo
+                            </div>
+                            <div class="popbody pinkback">
+                                <div class="popularcontent">
+                                    Questions<br>
+                                    <span class="popularhead"><i class="fa fa-question-circle-o fa-2x" aria-hidden="true"></i> 5000+</span>
+                                </div>
+                                <div class="popularcontent">
+                                    Tests<br>
+                                    <span class="popularhead"><i class="fa fa-pencil fa-2x" aria-hidden="true"></i> 100+</span>
+                                </div>
+                                <div class="popularcontent">
+                                    FLTs<br>
+                                    <span class="popularhead"><i class="fa fa-book fa-2x" aria-hidden="true"></i> 15</span>
+                                </div>
+                                <div class="popularcontent2">
+                                    Rs. 2500<br>
+                                </div>
+                            </div>
+                            <div class="buy popularcontent2 darkpinkback">
+                                Free Test|Buy Now<br>
+                            </div>
+                        </td>
+                        <td class="blueborder">
+                            <div class="poptop bblue">
+                                <h2 class="heads">MH-CET</h2>Combo
+                            </div>
+                            <div class="popbody blueback">
+                                <div class="popularcontent">
+                                    Questions<br>
+                                    <span class="popularhead"><i class="fa fa-question-circle-o fa-2x" aria-hidden="true"></i> 5000+</span>
+                                </div>
+                                <div class="popularcontent">
+                                    Tests<br>
+                                    <span class="popularhead"><i class="fa fa-pencil fa-2x" aria-hidden="true"></i> 100+</span>
+                                </div>
+                                <div class="popularcontent">
+                                    FLTs<br>
+                                    <span class="popularhead"><i class="fa fa-book fa-2x" aria-hidden="true"></i> 15</span>
+                                </div>
+                                <div class="popularcontent2">
+                                    Rs. 2500<br>
+                                </div>
+                            </div>
+                            <div class="buy popularcontent2 darkblueback">
+                                Free Test|Buy Now<br>
+                            </div>
+                        </td>
                     </tr>
                 </table>
                 <br>
             </div>
-            <div style="background-color:#fae1d3;text-align:center;padding:20px 0px 20px 0px;">
-                    MH CET Test Series - Now on sale | <a href=# style="color:blue">Buy now </a> 
+        </section>
+        <!--Buy Now 1 -->
+        <section>
+            <div class="middlelines">
+                    MH CET Test Series - Now on sale | <a href"#" class="blue">Buy now </a> 
             </div>
+        </section>
+        <!-- Success Strories -->
+        <section>
             <br>
-            <h1 style="font-weight:bolder;text-align:center">Rankers and Success Stories</h1>
+            <h1 class="heads">Rankers and Success Stories</h1>
             <div id="container2">
                 <div class="carousel2">  
-                        <div class="slider-image car2">
-                            <img src="JBIMS.png" class="car2img"><div id="car2text">I have been accessing Testfunda since 2009. I started by subscribing to the daily questions, wordlists and was fascinated by the weekly puzzle. I bought mocks for CAT, XAT and SSC. Being a working professional since 5 years, I studied whenever I could and mostly on weekends since I couldn’t have a fixed schedule.</div>
-                        </div>
-                        <div class="slider-image car2">
-                            <img src="Himanshu_Joshi.png" class="car2img"><div id="car2text">I have been accessing Testfunda since 2009. I started by subscribing to the daily questions, wordlists and was fascinated by the weekly puzzle. I bought mocks for CAT, XAT and SSC. Being a working professional since 5 years, I studied whenever I could and mostly on weekends since I couldn’t have a fixed schedule.</div>
-                        </div>
-                        <div class="slider-image car2">
-                            <img src="JBIMS.png" class="car2img"><div id="car2text">I have been accessing Testfunda since 2009. I started by subscribing to the daily questions, wordlists and was fascinated by the weekly puzzle. I bought mocks for CAT, XAT and SSC. Being a working professional since 5 years, I studied whenever I could and mostly on weekends since I couldn’t have a fixed schedule.</div>
-                        </div>
-                        <div class="slider-image car2">
-                            <img src="Himanshu_Joshi.png" class="car2img"><div id="car2text">I have been accessing Testfunda since 2009. I started by subscribing to the daily questions, wordlists and was fascinated by the weekly puzzle. I bought mocks for CAT, XAT and SSC. Being a working professional since 5 years, I studied whenever I could and mostly on weekends since I couldn’t have a fixed schedule.</div>
-                        </div>
+                    <div class="slider-image car2">
+                        <img src="JBIMS.png" class="car2img"><div id="car2text">I have been accessing Testfunda since 2009. I started by subscribing to the daily questions, wordlists and was fascinated by the weekly puzzle. I bought mocks for CAT, XAT and SSC. Being a working professional since 5 years, I studied whenever I could and mostly on weekends since I couldn’t have a fixed schedule.</div>
+                    </div>
+                    <div class="slider-image car2">
+                        <img src="Himanshu_Joshi.png" class="car2img"><div id="car2text">I have been accessing Testfunda since 2009. I started by subscribing to the daily questions, wordlists and was fascinated by the weekly puzzle. I bought mocks for CAT, XAT and SSC. Being a working professional since 5 years, I studied whenever I could and mostly on weekends since I couldn’t have a fixed schedule.</div>
+                    </div>
+                    <div class="slider-image car2">
+                        <img src="JBIMS.png" class="car2img"><div id="car2text">I have been accessing Testfunda since 2009. I started by subscribing to the daily questions, wordlists and was fascinated by the weekly puzzle. I bought mocks for CAT, XAT and SSC. Being a working professional since 5 years, I studied whenever I could and mostly on weekends since I couldn’t have a fixed schedule.</div>
+                    </div>
+                    <div class="slider-image car2">
+                        <img src="Himanshu_Joshi.png" class="car2img"><div id="car2text">I have been accessing Testfunda since 2009. I started by subscribing to the daily questions, wordlists and was fascinated by the weekly puzzle. I bought mocks for CAT, XAT and SSC. Being a working professional since 5 years, I studied whenever I could and mostly on weekends since I couldn’t have a fixed schedule.</div>
                     </div>
                 </div>
-            <div style="background-color:#cff8fe">
-                <table class="signups">
+            </div>
+        </section>
+        <!-- Sign Up Bar -->
+        <section>
+            <div class="blueback">
+                <table class="signups center">
                     <tr>
-                        <td style="border-right: 1px solid black;padding-right:10px;width:200px">
+                        <td class="sff">
                             <h1>SIGN UP FOR FREE</h1>
                         </td>
                         <td>
@@ -393,28 +434,37 @@
                     </tr>
                 </table>
             </div>
-            <div style="background-color:#fae1d3;text-align:center;padding:20px 0px 20px 0px;">
-                    MH CET Combo Course | <a href=# style="color:blue">Buy now </a> 
+        </section>
+        <!-- Buy Now 2 -->
+        <section>
+            <div class="middlelines">
+                MH CET Combo Course | <a href=# class="blue">Buy now </a> 
             </div>
+        </section>
+        <!-- Explanation -->
+        <section>
             <br>
-            <div style="background-color:#f7f7f7;color:#575555;padding-left:100px">
-                    <h2 style="text-align:center;">Why TestFunda is the best choice for you?</h2>
-                    <br>
-                    The competition is increasing day by day and every one wishes to achieve high scores, but the rush faced in coaching institutes, with students cramped up in a room trying to understand what is being explained becomes difficult. Not everyone is able to ask the doubts, not everyone is able to grab the attention of the teacher and thus all the effort and time dedicated goes to waste.
-                    <br><br>
-                    TestFunda has got the best solution for the same. Providing online coaching for CAT exam, XAT, NMAT, MHCET, CMAT, SNAP, IIFT and many more, TestFunda makes it easier for you to ace these competitive exams.
-                    <br><br>
-                    By signing up for online coaching of the competitive exams you are at a very big advantage, because you get the entire study material in your hands and you can give mock test and prepare from the comfort of your house without having to waste time on commute. TestFunda provides you not only textbooks and question papers for practice but also provides you free CAT Question of the Day, daily to boost your knowledge and generate interest in CAT topics, free Daily wordlist which helps with your vocabulary, free Tip of the day which comprises of tips and tricks for CAT Quant, CAT Verbal and CAT DILR and Weekly Puzzles to challenge the logical end of your MBA preparation.
-                    <br><br>
-                    TestFunda provides you a detailed analysis report of your mock test at topic, section and overall level which helps you to identify your strengths and weaknesses so you could work on improving them, thus helping you achieve a higher percentile with our CAT online coaching.Mock Tests are taken replicating the actual exam player, with the same scoring process, so that you get a hands on experience of the same and are prepared well for when you have to actually appear for the exam.
-                    <br><br>
-                    The online medium of preparation has another added advantage that you are able to get support 24x7 for all your doubts and queries which are cleared by CAT toppers and MBA experts.
-                    <br><br>
-                    Preparation for exams like MBA, BANK/SSC CGL, UPSC (Civil Service) and GATE has been made easier with TestFunda providing you many other score improving features that are not available in coaching institutes thus helping you achieve better ranks.
-                    <br><br>
+            <div class="graysec why">
+                <h2 class="heads">Why TestFunda is the best choice for you?</h2>
+                <br>
+                The competition is increasing day by day and every one wishes to achieve high scores, but the rush faced in coaching institutes, with students cramped up in a room trying to understand what is being explained becomes difficult. Not everyone is able to ask the doubts, not everyone is able to grab the attention of the teacher and thus all the effort and time dedicated goes to waste.
+                <br><br>
+                TestFunda has got the best solution for the same. Providing online coaching for CAT exam, XAT, NMAT, MHCET, CMAT, SNAP, IIFT and many more, TestFunda makes it easier for you to ace these competitive exams.
+                <br><br>
+                By signing up for online coaching of the competitive exams you are at a very big advantage, because you get the entire study material in your hands and you can give mock test and prepare from the comfort of your house without having to waste time on commute. TestFunda provides you not only textbooks and question papers for practice but also provides you free CAT Question of the Day, daily to boost your knowledge and generate interest in CAT topics, free Daily wordlist which helps with your vocabulary, free Tip of the day which comprises of tips and tricks for CAT Quant, CAT Verbal and CAT DILR and Weekly Puzzles to challenge the logical end of your MBA preparation.
+                <br><br>
+                TestFunda provides you a detailed analysis report of your mock test at topic, section and overall level which helps you to identify your strengths and weaknesses so you could work on improving them, thus helping you achieve a higher percentile with our CAT online coaching.Mock Tests are taken replicating the actual exam player, with the same scoring process, so that you get a hands on experience of the same and are prepared well for when you have to actually appear for the exam.
+                <br><br>
+                The online medium of preparation has another added advantage that you are able to get support 24x7 for all your doubts and queries which are cleared by CAT toppers and MBA experts.
+                <br><br>
+                Preparation for exams like MBA, BANK/SSC CGL, UPSC (Civil Service) and GATE has been made easier with TestFunda providing you many other score improving features that are not available in coaching institutes thus helping you achieve better ranks.
+                <br><br>
             </div>
-            <div class="blackul3" style="text-align:left">
-                <table class="link">
+        </section>
+        <!-- Links -->
+        <section>
+            <div class="blackul3 alignleft">
+                <table class="center">
                     <tr valign=top>
                         <td>
                             <ul class="links">
@@ -426,157 +476,164 @@
                             </ul>
                         </td>
                         <td>
-                                <ul class="links">
-                                    <b>MBA Preparation Exam</b>
-                                    <li>CAT</li>
-                                    <li>XAT</li>
-                                    <li>IIFT</li>
-                                    <li>CMAT</li>
-                                </ul>
-                            </td>
-                            <td>
-                                    <ul class="links">
-                                        <b>MBA Preparation Exam</b>
-                                        <li>CAT</li>
-                                        <li>XAT</li>
-                                        <b>MBA Preparation Exam</b>
-                                        <li>CAT</li>
-                                        <li>XAT</li>
-                                        <li>IIFT</li>
-                                        <li>CMAT</li>
-                                    </ul>
-                                </td>
-                                <td>
-                                        <ul class="links">
-                                            <b>MBA Preparation Exam</b>
-                                            <li>CAT</li>
-                                            <li>XAT</li>
-                                            <li>IIFT</li>
-                                            <li>CMAT</li>
-                                        </ul>
-                                    </td>
-                                    <td>
-                                            <ul class="links">
-                                                <b>MBA Preparation Exam</b>
-                                                <li>CAT</li>
-                                                <li>XAT</li>
-                                                <li>IIFT</li>
-                                                <li>CMAT</li>
-                                            </ul>
-                                        </td>
+                            <ul class="links">
+                                <b>MBA Preparation Exam</b>
+                                <li>CAT</li>
+                                <li>XAT</li>
+                                <li>IIFT</li>
+                                <li>CMAT</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul class="links">
+                                <b>MBA Preparation Exam</b>
+                                <li>CAT</li>
+                                <li>XAT</li>
+                                <b>MBA Preparation Exam</b>
+                                <li>CAT</li>
+                                <li>XAT</li>
+                                <li>IIFT</li>
+                                <li>CMAT</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul class="links">
+                                <b>MBA Preparation Exam</b>
+                                <li>CAT</li>
+                                <li>XAT</li>
+                                <li>IIFT</li>
+                                <li>CMAT</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul class="links">
+                                <b>MBA Preparation Exam</b>
+                                <li>CAT</li>
+                                <li>XAT</li>
+                                <li>IIFT</li>
+                                <li>CMAT</li>
+                            </ul>
+                        </td>
                     </tr>
                 </table>
             </div>
+        </section>
+        <!-- Contacting and copyright -->
+        <section>
             <div class="blackul3">
-                    <a href="#">About Us</a>
-                    |   
-                    <a href="#">Contact Us</a>
-                    |   
-                    <a href="#">Partner with Us</a>
-                    |   
-                    <a href="#">Advertise with us</a>
-                    |   
-                    <a href="#">Testfunda Blog</a>
-                    |   
-                    <a href="#">Download App <img src="google_play.png"></a>
-                    |   
-                    Follow us on <a href="#"><img src="facebook.png" height="30px" width="30px" style="border-radius:17.5px"></a> <a href="#"><img src="twitter.png" height="30px" width="30px"></a>    
+                <a href="#">About Us</a>
+                |   
+                <a href="#">Contact Us</a>
+                |   
+                <a href="#">Partner with Us</a>
+                |   
+                <a href="#">Advertise with us</a>
+                |   
+                <a href="#">Testfunda Blog</a>
+                |   
+                <a href="#">Download App <img src="google_play.png"></a>
+                |   
+                Follow us on <a href="#"><img src="facebook.png" class="social"></a> 
+                <a href="#"><img src="twitter.png" class="social"></a>    
             </div>
-            <div class="blackul3">&copy; 2008-18 Jimit Gandhi. No rights reserved
+            <div class="blackul3">
+                &copy; 2008-18 Jimit Gandhi. No rights reserved
             </div>
+        </section>
+        <!-- Sponsors -->
+        <section>
             <br>
-            <div style="text-align:center">
+            <div class="heads">
                 <img src="company-products.png">
             </div>
+        </section>
             <script>
-                           var $ex=0;
-                           $(function() {
-                            $(".dropdown1").on("click",function(e) {
-                                e.preventDefault();
-                                $(".clicks1").toggleClass("hide");
-                                $(".clicks2").addClass("hide");
-                                $(".clicks3").addClass("hide");
-                            });
-                            $(".dropdown2").on("click",function(e) {
-                                e.preventDefault();
-                                $(".clicks2").toggleClass("hide");
-                                $(".clicks1").addClass("hide");
-                                $(".clicks3").addClass("hide");
-                            });
-                            $(".dropdown3").on("click",function(e) {
-                                e.preventDefault();
-                                $(".clicks3").toggleClass("hide");
-                                $(".clicks2").addClass("hide");
-                                $(".clicks1").addClass("hide");
-                            });
-                            $(".dropdown4").on("click",function(e) {
-                                e.preventDefault();
-                                $(".clicks4").toggleClass("hide");
-                                $(".clicks5").addClass("hide");
-                                $(".clicks6").addClass("hide");
-                                $("#greenb3").toggleClass("gplus");
-                                $("#greenb4").removeClass("gplus");
-                                $("#greenb5").removeClass("gplus");
-                                $("#greenb6").removeClass("gplus");
-                            });
-                            $(".dropdown5").on("click",function(e) {
-                                e.preventDefault();
-                                $(".clicks5").toggleClass("hide");
-                                $(".clicks4").addClass("hide");
-                                $(".clicks6").addClass("hide");
-                                $("#greenb4").toggleClass("gplus");
-                                $("#greenb3").removeClass("gplus");
-                                $("#greenb5").removeClass("gplus");
-                                $("#greenb6").removeClass("gplus");
-                            });
-                            $(".dropdown6").on("click",function(e) {
-                                e.preventDefault();
-                                $(".clicks6").toggleClass("hide");
-                                $(".clicks5").addClass("hide");
-                                $(".clicks4").addClass("hide");
-                                $("#greenb5").toggleClass("gplus");
-                                $("#greenb4").removeClass("gplus");
-                                $("#greenb3").removeClass("gplus");
-                                $("#greenb6").removeClass("gplus");
-                            });
-                            $(".dropdown7").on("click",function(e) {
-                                e.preventDefault();
-                                $(".clicks4").addClass("hide");
-                                $(".clicks5").addClass("hide");
-                                $(".clicks6").addClass("hide");
-                                $("#greenb6").toggleClass("gplus");
-                                $("#greenb4").removeClass("gplus");
-                                $("#greenb5").removeClass("gplus");
-                                $("#greenb3").removeClass("gplus");
-                            });
-                            $("#navside").mouseleave(function(e) {
-                                e.preventDefault();
-                                $(".clicks4").addClass("hide");
-                                $(".clicks5").addClass("hide");
-                                $(".clicks6").addClass("hide");
-                                $("#greenb6").removeClass("gplus");
-                                $("#greenb4").removeClass("gplus");
-                                $("#greenb5").removeClass("gplus");
-                                $("#greenb3").removeClass("gplus");
-                            });
-                            $("#cc").on("click",function(e) {
-                                e.preventDefault();
-                                if($ex==0) {
-                                    $("#chatbox").css("height","275px");
-                                    $("#chatbut").removeClass("fa-angle-up");
-                                    $("#chatbut").addClass("fa-times");
-                                    $ex=1;
-                                }
-                                else if($ex==1) {
-                                    $('#chatbox').animate({height:'40px'}, 500);
-                                    $("#chatbut").removeClass("fa-times");
-                                    $("#chatbut").addClass("fa-angle-up");
-                                    $ex=0;
-                                }
-                            });
-                        });
-                       
-                        </script>
+               var $ex=0;
+                $(function() {
+                $(".dropdown1").on("click",function(e) {
+                    e.preventDefault();
+                    $(".clicks1").toggleClass("hide");
+                    $(".clicks2").addClass("hide");
+                    $(".clicks3").addClass("hide");
+                });
+                $(".dropdown2").on("click",function(e) {
+                    e.preventDefault();
+                    $(".clicks2").toggleClass("hide");
+                    $(".clicks1").addClass("hide");
+                    $(".clicks3").addClass("hide");
+                });
+                $(".dropdown3").on("click",function(e) {
+                    e.preventDefault();
+                    $(".clicks3").toggleClass("hide");
+                    $(".clicks2").addClass("hide");
+                    $(".clicks1").addClass("hide");
+                });
+                $(".dropdown4").on("click",function(e) {
+                    e.preventDefault();
+                    $(".clicks4").toggleClass("hide");
+                    $(".clicks5").addClass("hide");
+                    $(".clicks6").addClass("hide");
+                    $("#greenb3").toggleClass("gplus");
+                    $("#greenb4").removeClass("gplus");
+                    $("#greenb5").removeClass("gplus");
+                    $("#greenb6").removeClass("gplus");
+                });
+                $(".dropdown5").on("click",function(e) {
+                    e.preventDefault();
+                    $(".clicks5").toggleClass("hide");
+                    $(".clicks4").addClass("hide");
+                    $(".clicks6").addClass("hide");
+                    $("#greenb4").toggleClass("gplus");
+                    $("#greenb3").removeClass("gplus");
+                    $("#greenb5").removeClass("gplus");
+                    $("#greenb6").removeClass("gplus");
+                });
+                $(".dropdown6").on("click",function(e) {
+                    e.preventDefault();
+                    $(".clicks6").toggleClass("hide");
+                    $(".clicks5").addClass("hide");
+                    $(".clicks4").addClass("hide");
+                    $("#greenb5").toggleClass("gplus");
+                    $("#greenb4").removeClass("gplus");
+                    $("#greenb3").removeClass("gplus");
+                    $("#greenb6").removeClass("gplus");
+                });
+                $(".dropdown7").on("click",function(e) {
+                    e.preventDefault();
+                    $(".clicks4").addClass("hide");
+                    $(".clicks5").addClass("hide");
+                    $(".clicks6").addClass("hide");
+                    $("#greenb6").toggleClass("gplus");
+                    $("#greenb4").removeClass("gplus");
+                    $("#greenb5").removeClass("gplus");
+                    $("#greenb3").removeClass("gplus");
+                });
+                $("#navside").mouseleave(function(e) {
+                    e.preventDefault();
+                    $(".clicks4").addClass("hide");
+                    $(".clicks5").addClass("hide");
+                    $(".clicks6").addClass("hide");
+                    $("#greenb6").removeClass("gplus");
+                    $("#greenb4").removeClass("gplus");
+                    $("#greenb5").removeClass("gplus");
+                    $("#greenb3").removeClass("gplus");
+                });
+                $("#cc").on("click",function(e) {
+                    e.preventDefault();
+                    if($ex==0) {
+                        $("#chatbox").css("height","275px");
+                        $("#chatbut").removeClass("fa-angle-up");
+                        $("#chatbut").addClass("fa-times");
+                        $ex=1;
+                    }
+                    else if($ex==1) {
+                        $('#chatbox').animate({height:'40px'}, 500);
+                        $("#chatbut").removeClass("fa-times");
+                        $("#chatbut").addClass("fa-angle-up");
+                        $ex=0;
+                    }
+                });
+            });         
+        </script>
     </body>
-
 </html>
