@@ -510,10 +510,23 @@
             border: none;
             font-size: 20px;
         }
+        .chatb {
+            width: 200px;
+        }
         .hplus {
             height: 275px;
         }
         .gplus {
             margin-top:90px;
         }
-        
+        .chats {
+            text-align:center;
+            padding-left: 20px;
+            padding-right:20px;
+        }
+        #cc {
+            cursor:pointer;
+        }
+        .right2 {
+            float: right;
+        }
