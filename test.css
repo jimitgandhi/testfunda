@@ -1,532 +1,552 @@
-        .hide {
-            display: none;
-        }
-        .center {
-            margin-left: auto;
-            margin-right: auto;
-        }
-        #navtop {
-            background-color: #262c29;
-            padding: 0;
-        }
-        #navtop li {
-            display:inline-block;
-        }
-        #logo {
-            margin-left:80px;
-        }
-        .right {
-            float: right;
-            padding-right: 20px;
-        }
-        .blackul {
-            background-color: #262c29;
-            list-style-type: none;
-            margin: 0;
-        }
-        .blackul3 {
-            border: 1px solid #1f1f1f;
-            background-color: #262c29;
-            color:white;
-            text-align:center;
-            padding:10px;
-        }
-        .blackul3 a {
-            text-decoration:none;
-        }
-        .blackul3 a:hover {
-            text-decoration: underline;
-        }
-        .grid {
-            display:grid;
-            grid-template-columns: 1fr 6fr 4fr 0.5fr;
-            height: auto;
-        }
-        .leftsp {
-            grid-column:1;
-            background-color:#a2b1f3;
-        }
-        .rightsp {
-            grid-column:4;
-            background-color:#a2b1f3;
-        }
-        .greenul li {
-            padding: 20px;
-            color: white;
-        }
-        #stats {
-            padding:20px;
-        }
-        #laststats {
-            border-right: none;
-        }
-        #stats li {
-            display: inline-block;
-            width:24%;
-            padding: 0px;
-            text-align: center;
-            color: white;
-        }
-        .borderr {
-            border-right-color: white;
-            border-right:solid;
-        }
-        #navside {
-            position: fixed;
-            height: 100vh;
-            background-color: #00c785;
-        }
-        .greenul{
-            background-color:#00c785;
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-        li div {
-            padding: 16px;
-        }
-        .dropbtn {
-            color: white;
-            padding: 5px;
-            padding-right: 20px;
-            border-right:1px solid white;
-            text-decoration: none;
-            font-size: 15px;
-        }
-        .dropdown-content {
-            padding: 0;
-            position: absolute;
-            background-color: #f9f9f9;
-        }
-        .dropdown-content a {
-            color: black;
-            border-bottom: 1px solid black;
-            padding: 5px 30px;
-            text-decoration: none;
-            display: block;
-        }
-        .dropdown-content .dropdown:hover {
-            background-color: #f1f1f191
-        }
-        #large {
-            font-size: 50px;
-        }
-        #container {
-            width: 994px;
-            overflow: hidden;
-            z-index: -1;
-            max-width:1000px;
-            grid-column:2;
-        }
-        .carousel {
-            position: relative;
-            width: 3976px;
-            animation-name: slideranimation;
-            animation-duration: 12s;
-            animation-iteration-count: infinite;
-            z-index:-1;
-        }
-        .slider-image {
-            float: left;
-        }
-        @keyframes slideranimation {
-            0% {left:0px;}
-            20% {left: 0px;}
-            25% {left: -994px;}
-            45% {left: -994px;}
-            50% {left: -1988px;}
-            70% {left: -1988px;}
-            75% {left: -2982px;}
-            90% {left:-2982px;}
-            100% {left:0px;}
-        }
-        .announce {
-            grid-column:3;
-        }
-        .heads {
-            text-align:center;
-            font-weight:bold;
-        }
-        .sidenav {
-            height: 100%;
-            width: 0px; 
-            position: fixed;
-            z-index: 1;
-            top: 0;
-            left: 0;
-            background-color: #078b85;            overflow-x: hidden; /* Disable horizontal scroll */
-            padding-top: 60px;
-            transition: 0.5s;
-            margin-left: 67.862px;
-        }
-        .sidenav a {
-            padding: 32px 8px 32px 8px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 18px;
-            height: 27.862px;
-            color:white;
-            display: block;
-        }
-        .sidenav ul div a {
-            font-size: 12px;
-            padding: 5px;
-            font-weight: 100;
-        }
-        #navside:hover .sidenav {
-            width:250px;
-        }
-        #announcements {
-            list-style-type: none;
-            margin: 10px;
-            padding: 0px;
-        }
-        #announcements li:before {
-            content: "\0BB \020";
-        }
-        #announcements li {
-            padding-bottom: 6px;
-        }
-        #announcements li a {
-            text-decoration: none;
-        }
-        #announcements li:hover {
-            text-decoration: underline;
-        }
-        .red {
-            color: red;
-        }
-        .blue {
-            color: blue;
-        }
-        .courses {
-            text-align: center;
-            border-spacing: 40px 20px;
-        }
-        .popular {
-            text-align: center;
-            border-spacing: 40px 20px;
-        }
-        .popular td {
-            border-width: 2px;
-            border-style: solid;
-            padding: 0;
-            cursor:pointer;
-        }
-        .graysec {
-            background-color:#f7f7f7;
-        }
-        .features {
-            width: 70%;
-            border-spacing: 20px;
-            color: #575555;
-        }
-        .features tr td div {
-            float: left;
-            height: 100px;
-            padding-right: 20px;
-        }
-        .courses tr td {
-            border: 1px solid #d1d1d1;
-            font-size: 15px;
-            cursor:pointer;
-        }
-        .coursetopic {
-            font-size:  20px;
-            font-weight: bold; 
-        }
-        .coursedata {
-            color: gray;
-        }
-        .coursecontent {
-            margin:25px 25px 35px 25px;
-            padding:25px 5px 35px 5px;
-        }
-        .viewmore {
-            font-size: 20px;
-            padding: 10px;
-            margin-bottom: 0;
-            opacity: 0;
-        }
-        #course1:hover .viewmore1 {
-            opacity:1;
-            text-decoration: underline;
-            background-color: #ffe7e3;
-        }
-        #course1:hover {
-            text-decoration: underline;
-        }
-        #course2:hover .viewmore2 {
-            opacity:1;
-            text-decoration: underline;
-            background-color: #e8fee7;
-        }
-        #course2:hover {
-            text-decoration: underline;
-        }
-        #course3:hover .viewmore3 {
-            opacity:1;
-            text-decoration: underline;
-            background-color: #ffeeca;
-        }
-        #course3:hover {
-            text-decoration: underline;
-        }
-        #course4:hover .viewmore4 {
-            opacity:1;
-            text-decoration: underline;
-            background-color: #ffeeca;
-        }
-        #course4:hover {
-            text-decoration: underline;
-        }
-        #course5:hover .viewmore5 {
-            opacity:1;
-            text-decoration: underline;
-            background-color: #b5dce1;
-        }
-        #course5:hover {
-            text-decoration: underline;
-        }
-        .startnow {
-            display: block;
-            background-color: #575555;
-            color: white;
-            font-size: 20px;
-            padding: 10px 20px 10px 20px;
-            font-weight: bold;
-            border-radius: 5px;
-            border-width: 1px;
-            cursor:pointer;
-        }
-        .signups {
-            width: 30%;
-            text-align: center;
-            border-spacing: 20px;
-        }
-        .signupnow {
-            background-color: #05a705;
-            color: white;
-            width: 150px;
-            font-size: 20px;
-            padding: 10px 20px 10px 20px;
-            font-weight: bold;
-            border-color: #05a705;
-            border-radius: 5px;
-            border-width: 1px;
-            cursor:pointer;
-        }
-        .sff {
-            border-right: 1px solid black;
-            padding-right:10px;
-            width:200px;
-        }
-        .login {
-            margin-top: 10px;
-            background-color: #209c62;
-            color: white;
-            font-size: 15px;
-            padding:    2px 20px 2px 20px;
-            border-radius: 20px;
-            border-width: 1px;
-            border-color: #209C62;
-            cursor:pointer;
-        }
-        .signup {
-            margin-top: 10px;
-            background-color: #575555;
-            color: white;
-            font-size: 15px;
-            padding:    2px 20px 2px 20px;
-            border-radius: 20px;
-            border-width: 1px;
-            border-color: #575555;
-            cursor:pointer;
-        }
-        #topcontact {
-            color: white;
-            text-decoration: none;
-        }
-        .popularcontent {
-            font-size: 20px;
-            color:#645f5f;
-            border-bottom: 1px solid gray;
-            padding:20px;
-        }
-        .popularhead {
-            padding:5px 50px 5px 50px;
-            margin: 0;
-            font-weight: bold;
-        }
-        .popularcontent2 {
-            font-size: 22px;
-            padding:60px 15px 5px 15px;
-            font-weight:bold;
-            color:#645f5f;
-        }
-        .poptop {
-            font-weight:bold;
-            padding-bottom:60px;
-        }
-        .popbody {
-            padding: 10px;
-        }
-        .green {
-            color:#076107;
-        }
-        .greenback {
-            background-color:#c7f9c4;
-        }
-        .darkgreenback {
-            background-color:#8dc78a;
-        }
-        .greenborder {
-            border-color:  #c7f9c4;
-        }
-        .pink {
-            color: #d39d27;
-        }
-        .pinkback {
-            background-color:#ffeeca;
-        }
-        .darkpinkback {
-            background-color:#ffd988;
-        }
-        .pinkborder {
-            border-color:#ffeeca;
-        }
-        .bblue {
-            color: #3acae0;
-        }
-        .blueback {
-            background-color:#cff8fe;
-        }
-        .darkblueback {
-            background-color:#97f1ff;
-        }
-        .blueborder {
-            border-color:#cff8fe;
-        }
-        .middlelines {
-            background-color:#fae1d3;
-            text-align:center;
-            padding:20px 0px 20px 0px;
-        }
-        .buy {  
-            padding:10px 20px 10px 20px;
-            color:black;
-        }
-        .links {
-            list-style-type: none;
-            cursor:pointer;
-        }
-        .links li:before {
-            content: "\0BB \020";
-        }
-        .links li {
-            font-size: 12px;
-        }
-        .why {
-            background-color:#f7f7f7;
-            color:#575555;
-            padding-left:100px;
-        }
-        .alignleft {
-            text-align:left;
-        }
-        #container2 {
-            width: 80vw;
-            overflow: hidden;
-            margin-left: 15vw;
-            margin-right: 5vw;
-        }
-        .carousel2 {
-            position: relative;
-            width: 3200vw;
-            animation-name: slideranimation2;
-            animation-duration: 20s;
-            animation-iteration-count: infinite;
-        }
-        @keyframes slideranimation2 {
-            0% {left:0px;}
-            20% {left: 0px;}
-            25% {left: -80vw;}
-            45% {left: -80vw;}
-            50% {left: -160vw;}
-            70% {left: -160vw;}
-            75% {left: -240vw;}
-            90% {left:-240vw;}
-            100% {left:0px;}
-        }
-        .car2 {
-            width: 80vw;
-            color:gray;
-            text-justify: newspaper;
-            font-size: 18px;
-            font-style: italic;
-            margin-top: 0px;
-        }
-        .car2img {
-            float:left;
-            margin-bottom:20px;
-            padding: 10px 40px 10px 10px;
-        }
-        #car2text {
-            margin-top:45px;
-            width: 70vw;
-        }
-        .social {
-            height:30px;
-            width:30px;
-            border-radius:17.5px;
-        }
-        .chatbox {
-            position: fixed;
-            bottom: 0;
-            right: 20px;
-            font-size: 15px;
-            height: 40px;
-            background-color: white;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-            transition: 0.5s;
-        }
-        .chatbox table tr td{
-            padding-left: 4px;
-            padding-right: 4px;
-        }
-        #chathead {
-            height:20px;
-            background-color:#076107;
-            padding: 5px 15px 5px 15px;
-            color: white;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-        }
-        .chatbox tr td button {
-            width:200px;
-            color: white;
-            background-color:#076107;
-            border: none;
-            font-size: 20px;
-        }
-        .chatb {
-            width: 200px;
-        }
-        .hplus {
-            height: 275px;
-        }
-        .gplus {
-            margin-top:90px;
-        }
-        .chats {
-            text-align:center;
-            padding-left: 20px;
-            padding-right:20px;
-        }
-        #cc {
-            cursor:pointer;
-        }
-        .right2 {
-            float: right;
-        }
+.hide {
+    display: none;
+}
+span {
+    display: block;
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+section {
+    margin-left: 67.862px;
+}
+#navtop {
+    background-color: #262c29;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#navtop li {
+    display:inline-block;
+}
+#logo {
+    margin-left:5px;
+}
+.right {
+    float: right;
+    padding-right: 20px;
+}
+.blackul {
+    background-color: #262c29;
+    list-style-type: none;
+    margin: 0;
+}
+.blackul3 {
+    border: 1px solid #1f1f1f;
+    background-color: #262c29;
+    color:white;
+    text-align:center;
+    padding:10px;
+}
+.blackul3 a {
+    text-decoration:none;
+}
+.blackul3 a:hover {
+    text-decoration: underline;
+}
+.leftsp {
+    grid-column:1;
+    background-color:#a2b1f3;
+}
+.rightsp {
+    grid-column:4;
+    background-color:#a2b1f3;
+}
+.greenul li {
+    padding: 20px;
+    color: white;
+}
+#stats {
+    padding:20px;
+}
+#laststats {
+    border-right: none;
+}
+#stats li {
+    display: inline-block;
+    width:24%;
+    padding: 0px;
+    text-align: center;
+    color: white;
+}
+.borderr {
+    border-right-color: white;
+    border-right:solid;
+}
+#navside {
+    position: fixed;
+    height: 100vh;
+    background-color: #00c785;
+}
+.greenul{
+    background-color:#00c785;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li div {
+    padding: 16px;
+}
+.dropbtn {
+    color: white;
+    padding: 5px;
+    padding-right: 20px;
+    border-right:1px solid white;
+    text-decoration: none;
+    font-size: 15px;
+}
+.dropdown-content {
+    padding: 0;
+    position: absolute;
+    background-color: #f9f9f9;
+}
+.dropdown-content a {
+    color: black;
+    border-bottom: 1px solid black;
+    padding: 5px 30px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content .dropdown:hover {
+    background-color: #f1f1f191
+}
+#large {
+    font-size: 50px;
+}
+.grid {
+    height: auto;
+    padding-left: 20px;
+}
+#container {
+    width: 994px;
+    overflow: hidden;
+    z-index: -1;
+    max-width:1000px;
+    float: left;
+    border: 1px solid gray;
+    border-bottom: none;
+}
+.carousel {
+    position: relative;
+    width: 3976px;
+    animation-name: slideranimation;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    z-index:-1;
+}
+.slider-image {
+    float: left;
+}
+@keyframes slideranimation {
+    0% {left:0px;}
+    20% {left: 0px;}
+    25% {left: -994px;}
+    45% {left: -994px;}
+    50% {left: -1988px;}
+    70% {left: -1988px;}
+    75% {left: -2982px;}
+    90% {left:-2982px;}
+    100% {left:0px;}
+}
+.announce {
+    display: inline-block;
+    width: 28%;
+    height: 375px;
+    border: 1px solid gray;
+}
+.heads {
+    text-align:center;
+    font-weight:bold;
+}
+.sidenav {
+    height: 100%;
+    width: 0px; 
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #078b85;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+    margin-left: 67.862px;
+}
+.sidenav a {
+    padding: 32px 8px 32px 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    height: 27.862px;
+    color:white;
+    display: block;
+}
+.sidenav ul div a {
+    font-size: 12px;
+    padding: 5px;
+    font-weight: 100;
+}
+#navside:hover .sidenav {
+    width:250px;
+}
+#announcements {
+    list-style-type: none;
+    margin: 10px;
+    padding: 0px;
+}
+#announcements li:before {
+    content: "\0BB \020";
+}
+#announcements li {
+    padding-bottom: 6px;
+}
+#announcements li a {
+    text-decoration: none;
+}
+#announcements li:hover {
+    text-decoration: underline;
+}
+.red {
+    color: red;
+}
+.blue {
+    color: blue;
+}
+.courses {
+    text-align: center;
+    border-spacing: 40px 20px;
+    width: 80%;
+}
+.popular {
+    text-align: center;
+    border-spacing: 40px 20px;
+}
+.popular td {
+    border-width: 2px;
+    border-style: solid;
+    padding: 0;
+    cursor:pointer;
+}
+.graysec {
+    background-color:#f7f7f7;
+}
+.features {
+    width: 70%;
+    border-spacing: 20px;
+    color: #575555;
+}
+.features tr td div {
+    float: left;
+    height: 100px;
+    padding-right: 20px;
+}
+#course1, #course2, #course3, #course4, #course5 {
+    display: inline-block;
+    width: 30%;
+    border: 1px solid #d1d1d1;
+    font-size: 15px;
+    cursor:pointer;
+    margin: 10px;
+}
+.coursetopic {
+    font-size:  20px;
+    font-weight: bold; 
+}
+.coursedata {
+    color: gray;
+}
+.coursecontent {
+    margin:25px 25px 35px 25px;
+    padding:25px 5px 35px 5px;
+}
+.viewmore {
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 0;
+    opacity: 0;
+}
+#course1:hover .viewmore1 {
+    opacity:1;
+    text-decoration: underline;
+    background-color: #ffe7e3;
+}
+#course1:hover {
+    text-decoration: underline;
+}
+#course2:hover .viewmore2 {
+    opacity:1;
+    text-decoration: underline;
+    background-color: #e8fee7;
+}
+#course2:hover {
+    text-decoration: underline;
+}
+#course3:hover .viewmore3 {
+    opacity:1;
+    text-decoration: underline;
+    background-color: #ffeeca;
+}
+#course3:hover {
+    text-decoration: underline;
+}
+#course4:hover .viewmore4 {
+    opacity:1;
+    text-decoration: underline;
+    background-color: #ffeeca;
+}
+#course4:hover {
+    text-decoration: underline;
+}
+#course5:hover .viewmore5 {
+    opacity:1;
+    text-decoration: underline;
+    background-color: #b5dce1;
+}
+#course5:hover {
+    text-decoration: underline;
+}
+.startnow {
+    display: block;
+    background-color: #575555;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    border-width: 1px;
+    cursor:pointer;
+}
+.signups {
+    width: 30%;
+    text-align: center;
+    border-spacing: 20px;
+}
+.signupnow {
+    background-color: #05a705;
+    color: white;
+    width: 150px;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    font-weight: bold;
+    border-color: #05a705;
+    border-radius: 5px;
+    border-width: 1px;
+    cursor:pointer;
+}
+.sff {
+    border-right: 1px solid black;
+    padding-right:10px;
+    width:200px;
+}
+.login {
+    margin-top: 10px;
+    background-color: #209c62;
+    color: white;
+    font-size: 15px;
+    padding:    2px 20px 2px 20px;
+    border-radius: 20px;
+    border-width: 1px;
+    border-color: #209C62;
+    cursor:pointer;
+}
+.signup {
+    margin-top: 10px;
+    background-color: #575555;
+    color: white;
+    font-size: 15px;
+    padding:    2px 20px 2px 20px;
+    border-radius: 20px;
+    border-width: 1px;
+    border-color: #575555;
+    cursor:pointer;
+}
+#topcontact {
+    color: white;
+    text-decoration: none;
+}
+.padtopbot {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.popularcontent {
+    font-size: 20px;
+    color:#645f5f;
+    border-bottom: 1px solid gray;
+    padding:20px;
+}
+.popularhead {
+    padding:5px 50px 5px 50px;
+    margin: 0;
+    font-weight: bold;
+}
+.popularcontent2 {
+    font-size: 22px;
+    padding:60px 15px 5px 15px;
+    font-weight:bold;
+    color:#645f5f;
+}
+.poptop {
+    font-weight:bold;
+    padding-bottom:60px;
+}
+.popbody {
+    padding: 10px;
+}
+.green {
+    color:#076107;
+}
+.greenback {
+    background-color:#c7f9c4;
+}
+.darkgreenback {
+    background-color:#8dc78a;
+}
+.greenborder {
+    border-color:  #c7f9c4;
+}
+.pink {
+    color: #d39d27;
+}
+.pinkback {
+    background-color:#ffeeca;
+}
+.darkpinkback {
+    background-color:#ffd988;
+}
+.pinkborder {
+    border-color:#ffeeca;
+}
+.bblue {
+    color: #3acae0;
+}
+.blueback {
+    background-color:#cff8fe;
+}
+.darkblueback {
+    background-color:#97f1ff;
+}
+.blueborder {
+    border-color:#cff8fe;
+}
+.middlelines {
+    background-color:#fae1d3;
+    text-align:center;
+    padding:20px 0px 20px 0px;
+}
+.buy {  
+    padding:10px 20px 10px 20px;
+    color:black;
+}
+.links {
+    list-style-type: none;
+    cursor:pointer;
+}
+.links li:before {
+    content: "\0BB \020";
+}
+.links li {
+    font-size: 12px;
+}
+.why {
+    background-color:#f7f7f7;
+    color:#575555;
+    padding: 5px 100px;
+}
+.alignleft {
+    text-align:left;
+}
+#container2 {
+    width: 80vw;
+    overflow: hidden;
+    margin-left: 15vw;
+    margin-right: 5vw;
+}
+.carousel2 {
+    position: relative;
+    width: 3200vw;
+    animation-name: slideranimation2;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+@keyframes slideranimation2 {
+    0% {left:0px;}
+    20% {left: 0px;}
+    25% {left: -80vw;}
+    45% {left: -80vw;}
+    50% {left: -160vw;}
+    70% {left: -160vw;}
+    75% {left: -240vw;}
+    90% {left:-240vw;}
+    100% {left:0px;}
+}
+.car2 {
+    width: 80vw;
+    color:gray;
+    text-justify: newspaper;
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 0px;
+}
+.car2img {
+    float:left;
+    margin-bottom:20px;
+    padding: 10px 40px 10px 10px;
+}
+#car2text {
+    margin-top:45px;
+    width: 70vw;
+}
+.social {
+    height:30px;
+    width:30px;
+    border-radius:17.5px;
+}
+.chatbox {
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    font-size: 15px;
+    height: 40px;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: 0.5s;
+}
+.chatbox table tr td{
+    padding-left: 4px;
+    padding-right: 4px;
+}
+#chathead {
+    height:20px;
+    background-color:#076107;
+    padding: 5px 15px 5px 15px;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.chatbox tr td button {
+    width:200px;
+    color: white;
+    background-color:#076107;
+    border: none;
+    font-size: 20px;
+}
+.chatb {
+    width: 200px;
+}
+.hplus {
+    height: 275px;
+}
+.gplus {
+    margin-top:90px;
+}
+.chats {
+    text-align:center;
+    padding-left: 20px;
+    padding-right:20px;
+}
+#cc {
+    cursor:pointer;
+}
+.right2 {
+    float: right;
+}
