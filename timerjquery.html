@@ -8,13 +8,13 @@
             font-size: 80px;
         }
     </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <body>
         <span id="time">00:00</span>
-        <button onclick="startTime()">Start</button>
-        <button onclick="pauseTime()">Pause</button>
-        <button onclick="stopTime()">Stop</button>       
-    </body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <button id="start">Start</button>
+        <button id="pause">Pause</button>
+        <button id="stop">Stop</button>       
+   
     <script>
         var sec=0;
         var min=0;
@@ -70,7 +70,17 @@
             }
             $("#time").text(min1+":"+sec1);
         }
-    </script>
+        $("#start").click(function() {
+            startTime()
+        });
+        $("#pause").click(function() {
+            pauseTime()
+        }); 
+        $("#stop").click(function() {
+            stopTime()
+        });
 
+    </script>
+ </body>
 
 </html>
