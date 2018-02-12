@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+	<title>
+		Dropdown Menu
+	</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<style>
+		div {
+			width: 120px;
+			display: block;
+			height: 120px;
+			margin: 20px 0px;
+			border: 2px solid black;
+		}
+	</style>
+	<body>
+		<select id="months">
+			<option value="white">
+				January
+			</option>
+			<option  value="teal">
+				February
+			</option>
+			<option  value="blue">
+				March
+			</option>
+			<option  value="red">
+				April
+			</option>
+			<option  value="orange">
+				May
+			</option>
+			<option value="pink">
+				June
+			</option>
+			<option value="green">
+				July
+			</option>
+			<option value="aqua">
+				August
+			</option>
+			<option value="lime">
+				September
+			</option>
+			<option value="navy">
+				October
+			</option>
+			<option value="purple">
+				November
+			</option>
+			<option value="gray">
+				December
+			</option>
+		</select>
+		<div></div>
+		<button id="previous">Previous</button>
+		<button id="next">Next</button>
+		<script>
+			$("#previous").click(function() {
+	       		$('#months').val($('#months > option:selected').prev().val());
+				$("div").css("background-color",$('#months > option:selected').val()); 
+				if($('#months > option:selected').val()=="white") {
+					$("#previous").attr("disabled","disabled");
+				}
+				$("#next").removeAttr("disabled");
+			});
+			$("#next").click(function() {
+	       		$('#months').val($('#months > option:selected').next().val());
+				$("div").css("background-color",$('#months > option:selected').val());
+				if($('#months > option:selected').val()=="gray") {
+					$("#next").attr("disabled","disabled");
+				}
+				$("#previous").removeAttr("disabled");
+			});
+			$("#months").on("change",function() {
+				$("div").css("background-color",$(this).val());	 
+			});
+		</script>
+	</body>
+
+
+</html	
