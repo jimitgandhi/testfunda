@@ -55,6 +55,7 @@
 		<button id="previous">Previous</button>
 		<button id="next">Next</button>
 		<script>
+			$("#previous").attr("disabled","disabled");
 			$("#previous").click(function() {
 	       		$('#months').val($('#months > option:selected').prev().val());
 				$("div").css("background-color",$('#months > option:selected').val()); 
