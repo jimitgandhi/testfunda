@@ -14,6 +14,30 @@
         #name, #email {
             margin-left: 80px;
         }
+        #modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 250px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.4);
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 40%;
+        }
+        .close {
+            float: right;
+            font-size: 48px;
+            font-weight: bold;
+            cursor: pointer;
+        }
     </style>
     <body>
         <form>
@@ -25,13 +49,22 @@
             <input type="email" id="email" name="email" placeholder="E-Mail" required><br>
             <label for="dob">Date of Birth</label>
             <input type="date" id="dob" name="dob" placeholder="MM/DD/YYYY"  max="2017-12-31" required><br>
-            <input type="submit" value="Submit">
+            <input type="submit" name="submit" value="Submit">
         </form> 
         <a href="show.php"><button id="show">Show</button></a>
+        <div id="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p></p>
+            </div>    
+        </div>
         <script>
+            $(".close").click(function() {
+                $("#modal").css("display","none");
+            });
             $('#name').bind('keydown', function(event) {
                 var key = event.which;
-                if (key<8 || key>8 && key<37 || key>40 && key<65 || key>90 && key<97 || key>122) {
+                if (key<8 || key>9 && key<37 || key>40 && key<65 || key>90 && key<97 || key>122) {
                   event.preventDefault();
                 }
               });
@@ -60,8 +93,8 @@
                     date=dob.split("-");
                     if(date[0]<2018) {
                         if(date[1]<=12) {
-                            if([1,3,5,7,8,10,12].includes(date[1])) {
-                                if(date[2]<=31) {
+                            if($.inArray(parseInt(date[1]),[1,3,5,7,8,10,12])!=-1) {
+                                if(date[2]<32) {
                                     return 1;
                                 }
                             }
@@ -85,7 +118,7 @@
     		    return re.test(email.toLowerCase());
 		    }
             function submit() {
-                $("form").submit(function(e) {
+               $("form").submit(function(e) {
                     e.preventDefault();
                     if(validateName($("#name").val())) {
                         if(validateContact($("#contact").val())) {
@@ -95,9 +128,11 @@
                                         type: 'POST',
                                         url: 'form_send.php',
                                         data: $('form').serialize(),
-                                        success: function() {
+                                        success: function(val) {
                                             console.log("Signup was successful");
+                                            $("p").text(val);
                                             $("form").trigger("reset");
+                                            $("#modal").css("display","block");
                                         },
                                         error: function() {
                                             console.log("Signup was unsuccessful");
@@ -119,7 +154,7 @@
                     else {
                         alert("Enter a valid name!\n(No numbers or special characters are allowed!)");
                     }
-                });
+                }); 
             }
             $(document).ready(function() {
                 submit();
